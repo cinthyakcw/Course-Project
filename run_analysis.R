@@ -1,21 +1,17 @@
 #install useful packages
 #install.packages("data.table")
 #install.packages("reshape2")
-#install.packages("XLConnect")
-#install.packages("XLConnectJars")
 
 library(data.table)
 library(reshape2)
 library(plyr)
-#library(XLConnect)
-#library(XLConnectJars)
 
 url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-#zip<-"data_zip.zip"
-#download.file(url, zip)
+zip<-"data_zip.zip"
+download.file(url, zip)
 
-#unzip
-#unzip(zip, list = FALSE, overwrite = TRUE)
+unzip
+unzip(zip, list = FALSE, overwrite = TRUE)
 
 #sets the path for the job
 path <- getwd()
